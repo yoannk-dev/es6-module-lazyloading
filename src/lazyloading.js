@@ -1,7 +1,6 @@
 /**
  * Easy Lazyloading https://dev.to/ekafyi/lazy-loading-images-with-vanilla-javascript-2fbj
  */
-import "./styles.scss";
 
 class Lazyloading {
   constructor(className) {
