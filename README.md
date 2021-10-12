@@ -1,5 +1,5 @@
 # ES6 Module Modal
-A lightweight, accessible, vanilla JavaScript modal component.
+A lightweight, accessible, vanilla JavaScript lazyloading component.
 
 ## Readme
 This is an dependency free modal module for future projets.

@@ -3,10 +3,10 @@
  */
 import "./styles.scss";
 
-class YkLazyloading {
+class Lazyloading {
   constructor(className) {
     this.className = className;
-    this.lazyImages = YkLazyloading.getLazyImages(this.className);
+    this.lazyImages = Lazyloading.getLazyImages(this.className);
     /* Functions */
     this.lazyloadObserver = this.lazyloadObserver.bind(this);
   }
@@ -24,7 +24,7 @@ class YkLazyloading {
           console.log(entry);
           if (entry.isIntersecting) {
             const lazyImage = entry.target;
-            YkLazyloading.updateImage(lazyImage);
+            Lazyloading.updateImage(lazyImage);
             lazyImageObserver.unobserve(lazyImage);
           }
         });
@@ -36,7 +36,7 @@ class YkLazyloading {
       lazyImages = document.getElementsByClassName(this.className);
       // https://stackoverflow.com/questions/3871547/js-iterating-over-result-of-getelementsbyclassname-using-array-foreach
       [].forEach.call(lazyImages, lazyImage => {
-        YkLazyloading.updateImage(lazyImage);
+        Lazyloading.updateImage(lazyImage);
         lazyImage.height = "auto";
       });
     }
@@ -46,7 +46,7 @@ class YkLazyloading {
     image.src = image.dataset.src;
     image.dataset.src = "";
     image.classList.remove(this.className);
-    YkLazyloading.removeLoading(image);
+    Lazyloading.removeLoading(image);
   }
 
   static removeLoading(image) {
@@ -60,4 +60,4 @@ class YkLazyloading {
   }
 }
 
-export default YkLazyloading;
+export default Lazyloading;

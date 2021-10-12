@@ -3,74 +3,76 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Yoann-K.com - A lightweight, accessible, vanilla JavaScript lazyloading component.</title>
+    <title>Lazyloading component</title>
     <link rel="stylesheet" href="main.bundle.css">
 </head>
 
 <body>
-
-    <h1>Lazyloading Component</h1>
-    <p>Associer une classe d'image à un effet de lazyloading (affichage uniquement quand au dessus de la ligne de flottaison)</p>
-    <p>Mettre un "data-loading="true"" au parent pour afficher un loader</p>
-    <p>Mettre un png 1px x 1px au src</p>
+    <h1>Lazyloading : Un composant vanilla Javascript léger et accessible</h1>
+    <h2>Comment l'utiliser ?</h2>
+    <h3>Sur l'image à lazyloader</h3>
+    <p>Initialiser un objet js Lazyload avec une classe de son choix (sur l'ensemble du site, on utilisera cette classe pour lazyloader les images de notre choix)</p>
+    <h3>Effet de loading pour les réseaux lents</h3>
+    <p>On peut ajouter un attribut data-loading="true" à l'élément parent. Avec un peu de css (voir exemple dans le projet), on peut afficher un joli loader full css qui fera très bien le job.</p>
     
-    <div class="parent" data-loading="true">
-        <img src="" data-src="https://picsum.photos/400/300" class="u-lazyload" />
-        <noscript>
-            <img src="" data-src="https://picsum.photos/400/301" />
-            <style>.u-lazyload { display: none; }</style>
-        </noscript>
-    </div>
-    <div class="parent" data-loading="true">
-        <img src="" data-src="https://picsum.photos/400/302" class="u-lazyload" />
-        <noscript>
-            <img src="" data-src="https://picsum.photos/400/304" />
-            <style>.u-lazyload { display: none; }</style>
-        </noscript>
-    </div>
-    <div class="parent" data-loading="true">
-        <img src="" data-src="https://picsum.photos/400/303" class="u-lazyload" />
-        <noscript>
-            <img src="" data-src="https://picsum.photos/400/305" />
-            <style>.u-lazyload { display: none; }</style>
-        </noscript>
-    </div>
-    <div class="parent" data-loading="true">
-        <img src="" data-src="https://picsum.photos/400/306" class="u-lazyload" />
-        <noscript>
-            <img src="" data-src="https://picsum.photos/400/307" />
-            <style>.u-lazyload { display: none; }</style>
-        </noscript>
-    </div>
-    <div class="parent" data-loading="true">
-        <img src="" data-src="https://picsum.photos/400/308" class="u-lazyload" />
-        <noscript>
-            <img src="" data-src="https://picsum.photos/400/309" />
-            <style>.u-lazyload { display: none; }</style>
-        </noscript>
-    </div>
-    <div class="parent" data-loading="true">
-        <img src="" data-src="https://picsum.photos/400/310" class="u-lazyload" />
-        <noscript>
-            <img src="" data-src="https://picsum.photos/400/311" />
-            <style>.u-lazyload { display: none; }</style>
-        </noscript>
-    </div>
-    <div class="parent" data-loading="true">
-        <img src="" data-src="https://picsum.photos/400/312" class="u-lazyload" />
-        <noscript>
-            <img src="" data-src="https://picsum.photos/400/313" />
-            <style>.u-lazyload { display: none; }</style>
-        </noscript>
-    </div>
-    <div class="parent" data-loading="true">
-        <img src="" data-src="https://picsum.photos/400/314" class="u-lazyload" />
-        <noscript>
-            <img src="" data-src="https://picsum.photos/400/315" />
-            <style>.u-lazyload { display: none; }</style>
-        </noscript>
+    <div>
+        <div class="parent" data-loading="true">
+            <img src="" data-src="https://picsum.photos/400/300" class="u-lazyload" />
+            <noscript>
+                <img src="" data-src="https://picsum.photos/400/301" />
+                <style>.u-lazyload { display: none; }</style>
+            </noscript>
+        </div>
+        <div class="parent" data-loading="true">
+            <img src="" data-src="https://picsum.photos/400/302" class="u-lazyload" />
+            <noscript>
+                <img src="" data-src="https://picsum.photos/400/304" />
+                <style>.u-lazyload { display: none; }</style>
+            </noscript>
+        </div>
+        <div class="parent" data-loading="true">
+            <img src="" data-src="https://picsum.photos/400/303" class="u-lazyload" />
+            <noscript>
+                <img src="" data-src="https://picsum.photos/400/305" />
+                <style>.u-lazyload { display: none; }</style>
+            </noscript>
+        </div>
+        <div class="parent" data-loading="true">
+            <img src="" data-src="https://picsum.photos/400/306" class="u-lazyload" />
+            <noscript>
+                <img src="" data-src="https://picsum.photos/400/307" />
+                <style>.u-lazyload { display: none; }</style>
+            </noscript>
+        </div>
+        <div class="parent" data-loading="true">
+            <img src="" data-src="https://picsum.photos/400/308" class="u-lazyload" />
+            <noscript>
+                <img src="" data-src="https://picsum.photos/400/309" />
+                <style>.u-lazyload { display: none; }</style>
+            </noscript>
+        </div>
+        <div class="parent" data-loading="true">
+            <img src="" data-src="https://picsum.photos/400/310" class="u-lazyload" />
+            <noscript>
+                <img src="" data-src="https://picsum.photos/400/311" />
+                <style>.u-lazyload { display: none; }</style>
+            </noscript>
+        </div>
+        <div class="parent" data-loading="true">
+            <img src="" data-src="https://picsum.photos/400/312" class="u-lazyload" />
+            <noscript>
+                <img src="" data-src="https://picsum.photos/400/313" />
+                <style>.u-lazyload { display: none; }</style>
+            </noscript>
+        </div>
+        <div class="parent" data-loading="true">
+            <img src="" data-src="https://picsum.photos/400/314" class="u-lazyload" />
+            <noscript>
+                <img src="" data-src="https://picsum.photos/400/315" />
+                <style>.u-lazyload { display: none; }</style>
+            </noscript>
+        </div>
     </div>
     <script src="bundle.js"></script>
 </body>
-
 </html>

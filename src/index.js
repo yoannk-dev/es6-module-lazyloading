@@ -1,4 +1,4 @@
-import YkLazyloading from "./lazyloading";
+import Lazyloading from "./lazyloading";
 
-const lazyloading = new YkLazyloading("u-lazyload");
+const lazyloading = new Lazyloading("u-lazyload");
 lazyloading.init();
